@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 /**
- * Created by LaunchCode
+ * Modified by Julia 11/30/2017
  */
 public class TechJobs {
 
