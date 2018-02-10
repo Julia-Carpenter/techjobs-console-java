@@ -131,7 +131,8 @@ public class JobData {
             HashMap<String, String> tmpData = allJobs.get(i);
             for (String value : tmpData.values()) {
                 String valueLower = value.toLowerCase();
-                if (valueLower.contains(userSearchTerm.toLowerCase())) {
+                String searchTermLower = userSearchTerm.toLowerCase();
+                if (valueLower.contains(searchTermLower)) {
                     results.add(tmpData);
                 }
             }
