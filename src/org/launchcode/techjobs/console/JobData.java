@@ -127,8 +127,7 @@ public class JobData {
     public static ArrayList<HashMap<String, String>> findByValue(String userSearchTerm) {
         loadData();
         ArrayList<HashMap<String, String>> results = new ArrayList<>();
-        String valueLower;
-        String searchTermLower;
+        String valueLower, searchTermLower;
         for (Integer i = 0; i < allJobs.size(); i++) {
             HashMap<String, String> tmpData = allJobs.get(i);
             for (String value : tmpData.values()) {
