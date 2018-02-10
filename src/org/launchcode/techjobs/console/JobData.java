@@ -127,11 +127,13 @@ public class JobData {
     public static ArrayList<HashMap<String, String>> findByValue(String userSearchTerm) {
         loadData();
         ArrayList<HashMap<String, String>> results = new ArrayList<>();
+        String valueLower;
+        String searchTermLower;
         for (Integer i = 0; i < allJobs.size(); i++) {
             HashMap<String, String> tmpData = allJobs.get(i);
             for (String value : tmpData.values()) {
-                String valueLower = value.toLowerCase();
-                String searchTermLower = userSearchTerm.toLowerCase();
+                valueLower = value.toLowerCase();
+                searchTermLower = userSearchTerm.toLowerCase();
                 if (valueLower.contains(searchTermLower)) {
                     results.add(tmpData);
                 }
